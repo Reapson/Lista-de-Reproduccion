@@ -78,14 +78,4 @@ public class PracticaSem8GrupoDennys {
             JOptionPane.showMessageDialog(null, "Año no válido.");
         }
     }
-
-    public static void reproducirActual() {
-   JOptionPane.showInputDialog(null, "Reproduciendo: " + canciones[indiceActual].nombre);
-    try {
-        Thread.sleep(15000); 
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    }
-    siguiente(); 
-
 }

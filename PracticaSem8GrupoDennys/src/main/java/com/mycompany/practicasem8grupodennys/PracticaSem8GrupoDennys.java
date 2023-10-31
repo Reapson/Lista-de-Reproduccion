@@ -79,4 +79,13 @@ public class PracticaSem8GrupoDennys {
         }
     }
 
+    public static void reproducirActual() {
+    System.out.println("Reproduciendo: " + canciones[indiceActual].nombre);
+    try {
+        Thread.sleep(15000); 
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    siguiente(); 
+
 }

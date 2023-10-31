@@ -12,7 +12,24 @@ public class ListaReproduccion {
     }
 
     public void agregarCancion(Cancion cancion, int posicion) {
-        canciones[posicion] = cancion;
+        if (posicion >= 0 && posicion < canciones.length) {
+            canciones[posicion] = cancion;
+        } else {
+            System.out.println("Posición inválida");
+        }
+    }
+    
+    public Cancion obtenerCancion(int posicion) {
+        if (posicion >= 0 && posicion < canciones.length) {
+            return canciones[posicion];
+        } else {
+            System.out.println("Posición inválida");
+            return null;
+        }
+    }
+    
+    public Cancion getCancionActual() {
+        return canciones[posicionActual];
     }
 
     public void reproducir() {
